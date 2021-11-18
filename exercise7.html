@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7</title>
+</head>
+
+<body>
+    <a href="#" onmouseover="highlight()" onmouseout="returnNormal()">Mouse over this link to highlight the bold words below</a>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu ligula nisi. Nulla consectetur, lectus et
+        mollis dignissim, <b>turpis ligula viverra lacus, vitae pellentesque lacus ante id eros. Vestibulum rutrum
+            bibendum
+            sapien, ac lacinia ante efficitur non. In eget ipsum efficitur, imperdiet lectus ut, volutpat ex. Fusce
+            ornare
+            massa eget malesuada dignissim. In hendrerit augue felis,</b> et placerat sapien consectetur vitae.
+        <b>Vivamus
+            vestibulum sollicitudin lorem, ac bibendum enim tincidunt sed. Suspendisse leo mauris, dignissim vel lectus
+            eget, sodales vulputate quam. Fusce consequat metus a enim aliquet, a scelerisque tellus egestas.</b>
+
+        Duis laoreet in leo in porta. Ut ac accumsan odio, id tincidunt augue. In nec nulla lacus. Mauris lectus arcu,
+        malesuada at lacinia sit amet, <b>egestas a est. Proin eleifend bibendum massa, non congue sapien dapibus
+            condimentum. Nam in viverra magna, a consectetur velit. Donec sit amet turpis dolor. Donec ac lacus maximus,
+            ullamcorper massa et, aliquam felis. Sed consequat cursus felis</b> dictum tincidunt. Proin luctus cursus
+        nisl, nec
+        cursus erat suscipit in. Donec at mauris nisi. Nam at pellentesque risus, quis commodo mauris.
+
+        In eget ligula a risus tempus accumsan ac sed elit. Nullam elementum arcu eu leo volutpat pulvinar. Curabitur
+        hendrerit suscipit <b>lectus aliquam congue. Etiam tempus viverra nibh, non vulputate lacus imperdiet vel. Sed
+            in
+            faucibus ante. Vivamus imperdiet magna lorem. Pellentesque vel orci</b> ante. Nunc eget pretium leo.
+        Vestibulum id
+        porta turpis, a congue nibh. Proin neque leo, viverra et fermentum ut, fringilla vitae erat. Nullam scelerisque
+        feugiat nisl, porttitor rhoncus lacus dignissim sed.
+    </p>
+
+    <script>
+        function highlight() {
+            let x = document.getElementsByTagName("b");
+            for (let i = 0; i < x.length; i++) {
+                x[i].style.background = "yellow";
+            }
+        }
+
+        function returnNormal() {
+            let x = document.getElementsByTagName("b");
+            for (let i = 0; i < x.length; i++) {
+                x[i].style.background = "white";
+            }
+        }
+    </script>
+</body>
+
+</html>
